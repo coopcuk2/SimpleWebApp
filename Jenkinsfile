@@ -3,6 +3,6 @@ node {
       git 'https://github.com/coopcuk2/SimpleWebApp'
    }
    stage('Build') {
-      sh "./gradlew clean test"
+      bat "./gradlew clean test"
    }
 }
