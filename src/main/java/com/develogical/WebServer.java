@@ -16,7 +16,7 @@ import java.io.IOException;
 public class WebServer {
     @SuppressWarnings("WeakerAccess")
     public WebServer() throws Exception {
-        Server server = new Server(8080);
+        Server server = new Server(8081);
 
         ServletHandler handler = new ServletHandler();
         handler.addServletWithMapping(new ServletHolder(new Website()), "/*");
